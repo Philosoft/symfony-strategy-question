@@ -14,9 +14,7 @@ class UsefulService
     /** @var UsefulStrategyInterface */
     private $strategy;
 
-    public function __construct(int $strategyType) {
-        $requiredDependency = new RequiredDependency();
-
+    public function __construct(int $strategyType, RequiredDependency $requiredDependency) {
         switch ($strategyType) {
             case 1:
             default:
